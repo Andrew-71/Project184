@@ -1,0 +1,98 @@
+# Exported from Fuse 1.3.0
+
+newmtl Top
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Top_diffuse.png
+map_Ks NTF_Top_specular.png
+bump NTF_Top_normal.png
+map_Ns NTF_Top_gloss.png
+
+newmtl Eyewear
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Eyewear_diffuse.png
+map_Ks NTF_Eyewear_specular.png
+bump NTF_Eyewear_normal.png
+map_Ns NTF_Eyewear_gloss.png
+
+newmtl Mask
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Mask_diffuse.png
+map_Ks NTF_Mask_specular.png
+bump NTF_Mask_normal.png
+map_Ns NTF_Mask_gloss.png
+
+newmtl Body
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Body_diffuse.png
+map_Ks NTF_Body_specular.png
+bump NTF_Body_normal.png
+map_Ns NTF_Body_gloss.png
+
+newmtl Hat
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Hat_diffuse.png
+map_Ks NTF_Hat_specular.png
+bump NTF_Hat_normal.png
+map_Ns NTF_Hat_gloss.png
+
+newmtl Bottom
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Bottom_diffuse.png
+map_Ks NTF_Bottom_specular.png
+bump NTF_Bottom_normal.png
+map_Ns NTF_Bottom_gloss.png
+
+newmtl Glove
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Glove_diffuse.png
+map_Ks NTF_Glove_specular.png
+bump NTF_Glove_normal.png
+map_Ns NTF_Glove_gloss.png
+
+newmtl Shoes
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd NTF_Shoes_diffuse.png
+map_Ks NTF_Shoes_specular.png
+bump NTF_Shoes_normal.png
+map_Ns NTF_Shoes_gloss.png
+
