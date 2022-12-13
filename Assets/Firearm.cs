@@ -36,7 +36,7 @@ public class Firearm : MonoBehaviour
         // if left mouse/RT is pressed attempt to fire
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
-            nextTimeToFire = Time.time + fireRate * 1000;
+            nextTimeToFire = Time.time + fireRate;
             Shoot();
         }
 
@@ -54,7 +54,6 @@ public class Firearm : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(shootSound);
             // reduce ammo by 1
             currentAmmo--;
-            nextTimeToFire = Time.time + 1f / fireRate;
             // raycast from center of screen
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, range)) {
@@ -74,16 +73,13 @@ public class Firearm : MonoBehaviour
         } else {
             // play empty sound
             GetComponent<AudioSource>().PlayOneShot(emptySound);
-            nextTimeToFire = Time.time + 1000;
+            nextTimeToFire = Time.time + 4;
         }
     }
 
     void Reload() {
-        nextTimeToFire = Time.time + Mathf.Infinity;
-        GetComponent<AudioSource>().PlayOneShot(reloadSound).OnComplete(() => {
-            currentAmmo = Mathf.Min(maxAmmo, clipSize);
-            nextTimeToFire = Time.time + 1f / fireRate;
-        });
+        GetComponent<AudioSource>().PlayOneShot(reloadSound);
+        currentAmmo = Mathf.Min(maxAmmo, clipSize);
     }
 
     IEnumerator Tracer(Vector3 hitPoint) {

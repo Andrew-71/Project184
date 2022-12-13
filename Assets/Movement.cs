@@ -44,5 +44,10 @@ public class Movement : MonoBehaviour
         animator.SetFloat("speed_side", speed_side);
         
         controller.Move(move * speed * Time.deltaTime);
+        
+        if (!controller.isGrounded)
+        {
+            controller.Move(Vector3.down * 9.81f * Time.deltaTime);
+        }
     }
 }
